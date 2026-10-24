@@ -1,0 +1,43 @@
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>締め切り・やることまとめ</title><style>
+:root{--bg:#f6f4ef;--fg:#222;--card:#fff;--muted:#666;--line:#ddd}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1c1f;--fg:#e8e8e8;--card:#26282c;--muted:#aaa;--line:#444}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,'Hiragino Sans','Yu Gothic UI',sans-serif;line-height:1.7;font-size:16px}
+header{background:#2B3A67;color:#fff;padding:16px}header h1{margin:0;font-size:22px}header a{color:#cfe0ff}
+main{max-width:1000px;margin:0 auto;padding:0 16px 40px}h2{font-size:19px;border-left:6px solid #2B3A67;padding-left:10px;margin:28px 0 8px}
+h2.u{border-color:#C0392B}ul{padding-left:1.2em;margin:6px 0}li{margin:4px 0}.src{color:var(--muted);font-size:13px;margin-top:30px}nav a{display:inline-block;margin:4px 8px 0 0}
+details{margin:14px 0}summary{cursor:pointer;color:var(--muted);font-weight:700}
+.dl{background:var(--card);border:1px solid var(--line);border-left:6px solid #2A5DB0;border-radius:8px;padding:10px 12px;margin:10px 0}
+.dl.u{border-left-color:#C0392B}.dl.e{opacity:.65;border-left-color:#999}
+.dl .w{font-weight:700;font-size:15px;color:var(--muted)}
+.dl .t{font-size:17px;font-weight:700;margin:2px 0}
+.dl .d{font-size:15px}
+.badge{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:#C0392B;border-radius:999px;padding:1px 10px;margin-left:8px;vertical-align:middle}
+.badge.b{background:#2A5DB0}.empty{color:var(--muted);margin:6px 0}
+</style></head><body><header><h1>締め切り・やることまとめ</h1><nav><a href='../../'>← 一覧</a></nav></header><main><p>締め切りと、その日までにやることのまとめです。日付の早い順。<b style='color:#C0392B'>赤＝残り7日以内</b>。過ぎた予定は下の「終了したもの」にまとまります。</p><h2 class=u>⚠️ 直近の締め切り（7日以内）</h2><div id=u></div><h2>これからの予定</h2><div id=s></div><details><summary>終了したもの（<span id=ec>0</span>件）</summary><div id=e></div></details><noscript><h2 class=u>⚠️ 直近の締め切り（7日以内）</h2><ul><li><span style='color:#C0392B;font-weight:bold'>今すぐ</span>　ザシアンを相棒にして、仲良し以上にする：ぎんのおうかんを使うための条件。早めに相棒にしてハートをためておく</li><li><span style='color:#C0392B;font-weight:bold'>10/25(日) 21:00</span>　ニューラ（ダイマックス）終了：マニューラに進化させたら、ダメージ計算の除外を外す</li></ul><h2>これからの予定</h2><ul><li><b>11/8(日) 23:59</b>　キラチャーム期限：仲良し以上のフレンドと交換する</li><li><b>11/9(月)10:00〜11/13(金)20:00</b>　Into the Wild（王の姿の★5レイド）：王の姿のザシアン・ザマゼンタの★5レイド。ザマゼンタを王の姿にする</li><li><b>11/9(月) 18:00〜19:00</b>　ザシアンのレイドアワー</li><li><b>11/10(火) 18:00〜19:00</b>　ザマゼンタのレイドアワー</li><li><b>11/15(日) 18:00</b>　GOパス終了：デラックスを最後までクリアして、ぎんのおうかんを手に入れる</li><li><b>11/17(火) 23:59</b>　GOパスの報酬の受け取り期限</li><li><b>11/22(日) 23:59</b>　ぎんのおうかんの使用期限：ザシアンの攻撃を 10 → 15 に特訓する</li></ul><h2>終了したもの</h2><ul><li>（まだありません）</li></ul></noscript><p class=src>出典: 指示書（メール 2026-10-24）／ 各ページ: Into the Wild・GOパス デラックス・キラチャーム・ザシアンザマゼンタ育成計画　更新 2026-10-24</p></main>
+<script>
+var DL=[{"due": null, "end": null, "label": "今すぐ", "title": "ザシアンを相棒にして、仲良し以上にする", "detail": "ぎんのおうかんを使うための条件。早めに相棒にしてハートをためておく"}, {"due": "2026-10-25T21:00", "end": "2026-10-25T21:00", "label": "10/25(日) 21:00", "title": "ニューラ（ダイマックス）終了", "detail": "マニューラに進化させたら、ダメージ計算の除外を外す"}, {"due": "2026-11-08T23:59", "end": "2026-11-08T23:59", "label": "11/8(日) 23:59", "title": "キラチャーム期限", "detail": "仲良し以上のフレンドと交換する"}, {"due": "2026-11-09T10:00", "end": "2026-11-13T20:00", "label": "11/9(月)10:00〜11/13(金)20:00", "title": "Into the Wild（王の姿の★5レイド）", "detail": "王の姿のザシアン・ザマゼンタの★5レイド。ザマゼンタを王の姿にする"}, {"due": "2026-11-09T18:00", "end": "2026-11-09T19:00", "label": "11/9(月) 18:00〜19:00", "title": "ザシアンのレイドアワー", "detail": ""}, {"due": "2026-11-10T18:00", "end": "2026-11-10T19:00", "label": "11/10(火) 18:00〜19:00", "title": "ザマゼンタのレイドアワー", "detail": ""}, {"due": "2026-11-15T18:00", "end": "2026-11-15T18:00", "label": "11/15(日) 18:00", "title": "GOパス終了", "detail": "デラックスを最後までクリアして、ぎんのおうかんを手に入れる"}, {"due": "2026-11-17T23:59", "end": "2026-11-17T23:59", "label": "11/17(火) 23:59", "title": "GOパスの報酬の受け取り期限", "detail": ""}, {"due": "2026-11-22T23:59", "end": "2026-11-22T23:59", "label": "11/22(日) 23:59", "title": "ぎんのおうかんの使用期限", "detail": "ザシアンの攻撃を 10 → 15 に特訓する"}];
+var DAY=86400000;
+function pd(s){return s?new Date(String(s).replace('T',' ').replace(/-/g,'/')):null;}
+function esc(s){return (s==null?'':String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function render(){
+  var now=new Date(),U=[],S=[],E=[],i,it,st,en,days,live,badge;
+  for(i=0;i<DL.length;i++){
+    it=DL[i];st=pd(it.due);en=pd(it.end)||st;
+    if(it.due==null){U.push({it:it,start:-Infinity,badge:'今すぐ',cls:'u'});continue;}
+    if(en&&en<now){E.push({it:it,start:st.getTime()});continue;}
+    days=Math.ceil((st-now)/DAY);live=(st<=now&&en>=now);
+    badge=live?'開催中':(days<=0?'今日':'あと'+days+'日');
+    (days<=7?U:S).push({it:it,start:st.getTime(),badge:badge,cls:days<=7?'u':''});
+  }
+  U.sort(function(a,b){return a.start-b.start;});
+  S.sort(function(a,b){return a.start-b.start;});
+  E.sort(function(a,b){return b.start-a.start;});
+  function card(x,kind){return '<div class="dl '+kind+'"><div class="w">'+esc(x.it.label)+(x.badge?'<span class="badge '+(kind==='u'?'':'b')+'">'+x.badge+'</span>':'')+'</div><div class="t">'+esc(x.it.title)+'</div>'+(x.it.detail?'<div class="d">'+esc(x.it.detail)+'</div>':'')+'</div>';}
+  document.getElementById('u').innerHTML=U.length?U.map(function(x){return card(x,'u');}).join(''):'<p class="empty">いまのところありません</p>';
+  document.getElementById('s').innerHTML=S.length?S.map(function(x){return card(x,'');}).join(''):'<p class="empty">いまのところありません</p>';
+  document.getElementById('e').innerHTML=E.length?E.map(function(x){return card({it:x.it,badge:''},'e');}).join(''):'<p class="empty">まだありません</p>';
+  document.getElementById('ec').textContent=E.length;
+}
+render();
+</script>
+</body></html>
