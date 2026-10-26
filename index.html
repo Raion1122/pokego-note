@@ -32,16 +32,7 @@ ul.tl{padding-left:0}ul.tl li{list-style:none;margin:7px 0}ul.tl a{display:flex;
   var wd=['日','月','火','水','木','金','土'];
   var now=new Date();
   document.getElementById('wxDate').textContent=(now.getMonth()+1)+'/'+now.getDate()+'('+wd[now.getDay()]+')';
-  function wx(code){  // WMO天気コード → [絵文字, 表示名, ポケGOの天候ブースト]
-    if(code===0||code===1) return ['☀️','晴れ','ほのお・くさ・じめん'];
-    if(code===2) return ['⛅','晴れ時々くもり','ノーマル・いわ'];
-    if(code===3) return ['☁️','くもり','フェアリー・かくとう・どく'];
-    if(code===45||code===48) return ['🌫️','きり','あく・ゴースト'];
-    if((code>=71&&code<=77)||code===85||code===86) return ['🌨️','雪','こおり・はがね'];
-    if(code>=95) return ['⛈️','雷雨','みず・でんき・むし'];
-    if((code>=51&&code<=67)||(code>=80&&code<=82)) return ['🌧️','雨','みず・でんき・むし'];
-    return ['🌡️','天気不明','—'];
-  }
+  function wx(c){if(c===0||c===1)return['☀️','晴れ','ほのお・くさ・じめん',['fire','grass','ground']];if(c===2)return['⛅','晴れ時々くもり','ノーマル・いわ',['normal','rock']];if(c===3)return['☁️','くもり','フェアリー・かくとう・どく',['fairy','fighting','poison']];if(c===45||c===48)return['🌫️','きり','あく・ゴースト',['dark','ghost']];if((c>=71&&c<=77)||c===85||c===86)return['🌨️','雪','こおり・はがね',['ice','steel']];if(c>=95)return['⛈️','雷雨','みず・でんき・むし',['water','electric','bug']];if((c>=51&&c<=67)||(c>=80&&c<=82))return['🌧️','雨','みず・でんき・むし',['water','electric','bug']];return['🌡️','天気不明','—',[]];}
   // 東京都杉並区（緯度35.6994・経度139.6363）の今日の天気
   var url='https://api.open-meteo.com/v1/forecast?latitude=35.6994&longitude=139.6363&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FTokyo&forecast_days=1';
   fetch(url).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(j){
